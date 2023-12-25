@@ -1,7 +1,6 @@
-//* --> Importaciones globales
+//* Importaciones
 import { createRouter, createWebHistory } from 'vue-router';
 
-//* --> Importaciones locales
 import { setTitlePage } from './guards';
 
 export const router = createRouter({
@@ -16,6 +15,14 @@ export const router = createRouter({
             }
         },
         {
+            path: '/create-account',
+            name: 'create-account',
+            component: () => import('@/modules/create_account/CreateAccountLayout.vue'),
+            meta: {
+                title: 'Crear Cuenta'
+            }
+        },
+        {
             path: '/:pathMatch(.*)*',
             name: 'page-not-found',
             component: () => import('@/shared/components/PageNotFound.vue'),
@@ -26,5 +33,5 @@ export const router = createRouter({
     ]
 });
 
-//? --> Configuración de nombre de página
+//? Configuración de nombre de pestaña
 setTitlePage( router );

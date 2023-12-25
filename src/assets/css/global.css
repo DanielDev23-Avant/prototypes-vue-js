@@ -1,41 +1,90 @@
-/* ESTILOS DE CONTENEDOR RAÍZ */
+/* CONTENEDOR PRINCIPAL */
 .main-container {
     min-width: 100%;
     min-height: 100vh;
+}
+
+/* VERSIÓN DE PRODUCTO */
+.app-version-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.version { 
+    color: #A4A4A4;
+    font-size: 14px; 
+}
+
+/* TEXTOS */
+.title-1, .title-2, .title-3 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.title-1 { font-size: 14px; }
+.title-2 { font-size: 18px; }
+.title-3 { font-size: 25px; }
+
+.text-bold { font-weight: bold; }
+
+/* FORMULARIO */
+.form {
+    width: 400px;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 20px;
 }
 
-/* ESTILOS DE TEXTO */
-.title-1, .title-2, .title-3, .title-4 {
+.form-label {
+    font-size: 14px;
     letter-spacing: 5px;
     text-transform: uppercase;
+    margin-bottom: 5px;
 }
 
-.title-1 { font-size: 30px; }
-.title-2 { font-size: 25px; }
-.title-3 { font-size: 18px; }
-.title-4 { font-size: 14px; }
+.form-input-wrapper { position: relative; }
 
-.description-1, .description-2, .description-3 {
-    color: #A4A4A4;
+.form-icon { position: absolute; }
+
+.form-icon--left {
+    top: 8px;
+    left: 8px;
 }
 
-.description-1 { font-size: 16px; }
-.description-2 { font-size: 14px; }
-.description-3 { font-size: 12px; }
+.form-icon--right {
+    top: 8px;
+    right: 8px;
+}
 
-/* ESTILOS DE VERSIÓN DE PRODUCTO */
-.version {
-    color: #A4A4A4;
+.toggle-password {
+    cursor: pointer;
+    transition: color .5s ease;
+}
+.toggle-password:hover { color: #3d4899; }
+
+.form-input {
+    width: 100%;
+    height: 40px;
+    outline: 2px solid #DBDBDB;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0 40px;
     font-size: 14px;
+    transition: outline .5s ease;
+}
+.form-input:focus { outline: 2px solid #293277; }
+
+.form-error-message {
+    display: block;
+    font-size: 14px;
+    color: #DC5959;
+    margin-top: 5px;
 }
 
-/* ESTILOS DE BOTONES */
+/* BOTONES */
 .btn {
     width: 100%;
     height: 45px;
@@ -58,6 +107,18 @@
     width: 300px;
 }
 .btn-back:hover { background-color: #3aa876; }
+
+.btn-submit { background-color: #293277; }
+.btn-submit:hover { background-color: #3d4899; }
+
+.btn-link {
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color .5s ease;
+}
+.btn-link:hover { 
+    color: #3d4899; 
+}
 
 /* ESTILOS DINÁMICOS */
 .form-error { outline-color: #DC5959; }
