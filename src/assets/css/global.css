@@ -1,0 +1,30 @@
+/* ESTILOS DE CONTENEDOR RAÍZ */
+.main-container {
+    min-width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* ESTILOS DE TEXTO */
+.title-1, .title-2, .title-3, .title-4 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.title-1 { font-size: 30px; }
+.title-2 { font-size: 25px; }
+.title-3 { font-size: 18px; }
+.title-4 { font-size: 14px; }
+
+.description-1, .description-2, .description-3 {
+    color: #A4A4A4;
+}
+
+.description-1 { font-size: 16px; }
+.description-2 { font-size: 14px; }
+.description-3 { font-size: 12px; }
