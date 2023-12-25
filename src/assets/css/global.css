@@ -28,3 +28,43 @@
 .description-1 { font-size: 16px; }
 .description-2 { font-size: 14px; }
 .description-3 { font-size: 12px; }
+
+/* ESTILOS DE VERSIÓN DE PRODUCTO */
+.version {
+    color: #A4A4A4;
+    font-size: 14px;
+}
+
+/* ESTILOS DE BOTONES */
+.btn {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color .5s ease;
+
+    color: #FFFFFF;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-back {
+    background-color: #42B883;
+    width: 300px;
+}
+.btn-back:hover { background-color: #3aa876; }
+
+/* ESTILOS DINÁMICOS */
+.form-error { outline-color: #DC5959; }
+
+/* ANIMACIÓN DE TRANSICIÓN */
+.fade-enter-active, .fade-leave-active .error-message {
+    transition: opacity 0.5s ease;
+}
+
+.fade-enter-from, .fade-leave-to { opacity: 0; }
