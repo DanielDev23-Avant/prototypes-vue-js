@@ -12,7 +12,7 @@
 
 <template>
     <div class="app-version-container">
-        <h1 class="title-2">Vue Models</h1>
+        <h1 class="title-2">Vue Modals</h1>
         <span class="version">v{{ APP_VERSION }}</span>
     </div>
 </template>
