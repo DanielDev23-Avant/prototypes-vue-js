@@ -122,8 +122,12 @@
 }
 .btn-back:hover { background-color: #3aa876; }
 
-.btn-submit { background-color: #293277; }
-.btn-submit:hover { background-color: #3d4899; }
+.btn-primary { 
+    background-color: #293277;
+    width: 250px;
+    font-size: 12px;
+}
+.btn-primary:hover { background-color: #3d4899; }
 
 .btn-link {
     text-decoration: underline;
